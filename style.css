@@ -1,0 +1,530 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 10% 10% 20% 20% 10% 15%;
+  height: 40px;
+  justify-content: center;
+  border-bottom: 1px solid #eee;
+}
+
+.time,.email,.en{
+  background-color: rgba(255, 255, 255, 0.8);
+  /* border: 1px solid black; */
+  text-align: center;
+  font-size: 16px;
+}
+.phone{
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid #fffafa;
+  text-align: center;
+  font-size: 16px;
+}
+.apatment{
+  background-color: #DE6262;
+}
+.time li, .phone li,.email li,.en li,.apatment p{
+  margin-top: 10px;
+  text-align: center;
+}
+/* .time li{
+  margin-left: 85px;
+} */
+.grid-container ul li a:hover{
+  background-color: #eee; 
+}
+.grid-container ul li a{
+  padding: 5px 5px;
+  text-decoration: none;
+}
+
+.dropbtn {
+  background-color: white;
+  color: black;
+  padding: 12px;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 50px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: white;
+}
+li a:hover{
+  background-color: #EEEEEE;
+}
+.navbar{
+  display: grid;
+  grid-template-columns: 1.5fr 2.5fr;;
+  align-items: center;
+  /* position: fixed;  */
+   /* background-color: #fff;  */
+  margin-left: -45px;
+}
+.navigation li{
+  display: inline;
+}
+.navigation a{
+  margin-inline: 16px;
+  text-decoration: none;
+  color: black;
+  display: inherit;
+  font-size: 19px;
+}
+a.active{
+  background-color: red;
+}
+.logo img{
+  margin-left: 169px;
+}
+.slider1{
+  display: grid;
+  grid-template-columns: 1 / -2;
+
+}
+.main-content{
+  display: grid;
+  grid-template-columns: 27% 27% 27%;
+  justify-content: center;
+  row-gap: 31px;
+  column-gap: 42px;
+  margin-top: 50px;
+}
+.hert{
+  display: grid;
+  grid-template-columns: 20% 80%;
+}
+.hert .icon-img i{
+  color: #DE6262;
+}
+.icon-text p, h3{
+  margin-top: 12px;
+  margin-inline: 18px;
+}
+.icon-img i{
+  margin-top: 12px;
+  font-size: 45px;
+  margin-left: 25px;
+}
+.content{
+  display: grid;
+    grid-template-columns: .8fr 2.2fr;
+    margin-top: 52px;
+}
+.dental img{
+  height: 550px;
+  width: 100%;
+}
+.appoin{
+  /*  */
+  background-color: #DE6262;
+}
+.app {
+  width: 80%;
+  height: 100%;
+  /* border: 1px solid green; */
+  margin: 0 auto;
+}
+.Kidney{
+  display: grid;
+  grid-template-columns: 55% 30%;
+  justify-content: center;
+  margin-top: 35px;
+  grid-gap: 19px;
+}
+.kidney hr{
+  border-style: dotted;
+}
+.transplant h2{
+  font-size: 20px;
+}
+.transplant p{
+  margin-top: 11px;
+  margin-left: 8px;
+}
+.patient h3{
+  font-size: 20px;
+}
+.patient2{
+  display: grid;
+  grid-template-columns: 20% 70%;
+  justify-content: center;
+  margin-top: 27px;
+  column-gap: 11px;
+  row-gap: 18px;
+}
+.Testi img{
+  height: 71px;
+  border-radius: 50%;
+  margin-top: 4px;
+}
+.Testi2 img{
+  height: 71px;
+  border-radius: 50%;
+  /* margin-top: 4px; */
+  margin-left: -79px;
+    /* margin-right: 0px; */
+    margin-top: 17px;
+}
+.Testi-text {
+  margin-top: 12px;
+}
+.Testi-text h4{
+  margin-top: 12px;
+  font-size: 13px;
+}
+.Testi-text h5{
+  font-size: 10px;
+  margin-top: 7px;
+  margin-left: 8px;
+}
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 9px 7px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  margin-left: 139px;
+  margin-top: 33px;
+}
+.button1 {
+  background-color: #DE6262; 
+  color: black; 
+}
+.button1:hover {
+  background-color: black;
+  color: white;
+}
+section.meet{
+  display: grid;
+  grid-template-columns:  20% 20% 20% 20%;
+  /* column-gap: 99px; */
+  height: 100px;
+  margin-top: 50px;
+  background-color: #dee2e6;
+  justify-content: center;
+  text-align: center;
+}
+.lives h5{
+  margin-top: 30px;
+  font-size: 32px;
+}
+.lives p{
+  margin-top: 6px;
+  margin-left: 61px;
+}
+.our{
+  display: grid;
+  grid-template-columns: 1 /-1;
+  justify-items: center;
+  margin-top: 34px;
+}
+.our h5{
+  font-size: 29px;
+}
+.our p{
+  font-size: 19px;
+  margin-top: 5px;
+}
+.doctor1{
+  display: grid;
+  grid-template-columns:  20% 20% 20% 20%;
+  justify-content: center;
+  margin-top: 20px;
+  grid-gap: 10px;
+}
+.doctor-name h1{
+  text-align: center;
+  margin-top: 13px;
+  font-size: 20px;
+}
+.doctor-name p{
+  text-align: center;
+  margin-top: 4px;
+  font-size: 13px;
+}
+ 
+
+.accoridan{
+  max-width: 600px;
+  display: block;
+  margin: 100px auto;
+}
+.card{
+  box-shadow: 0px 0px 20px #d4d4d4;
+  margin-bottom: 20px;
+}
+.card-header h3{
+  cursor: pointer;
+  color: #4CAF50;
+  position: relative;
+  background-color: #3343a2;
+  margin: 0;
+  padding: 15px 20px;
+}
+.card-header{
+  position: relative;
+}
+.card-header span{
+  position: absolute;
+  right: 20px;
+  top: 12px;
+  height: 25px;
+  width: 25px;
+  color: #3343a2;
+  background-color: #ffffff;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 25px;
+  font-size: 13px;
+}
+.card-body{
+  padding: 20px;
+}
+.card-body{
+  display: none;
+}
+.card:nth-child(1).card-body{
+  display: block;
+}
+.card-body p{
+  font-size: 15px;
+  line-height: 24px;
+  color: #444444;
+}
+.footer{
+  background-color: #dee2e6 ;
+  height: auto;
+}
+.footer1{
+  display: grid;
+  grid-template-columns: 60% 20%;
+  justify-content: center;
+  margin-top: 32px;
+}
+input[type="text"] {
+  height: 34px;
+  width: 302px;
+  /* margin-inline: 141px; */
+  /* margin-left: 246px; */
+  margin-top: 35px;
+  margin-left: 90px;
+  margin-left:10px;
+}
+
+.subscribe{
+  display: flex;
+}
+.button2 {
+  background-color: #DE6262; 
+  color: black; 
+  margin-left: 36px;
+  width: 154px;
+  border-radius: 7px;
+}
+.button2:hover {
+  background-color: black;
+  color: white;
+}
+.contect-number p{
+  margin-top: 32px;
+}
+.contect-number h3{
+    font-size: 21px;
+}
+.footer2{
+  display: grid;
+  grid-template-columns: 60% 20%;
+  justify-content: center;
+  margin-top: 40px;
+}
+.footer3{
+  display: grid;
+  grid-template-columns: 15% 15% 15% 15%;
+  grid-template-rows: repeat(5, 1fr);
+  column-gap: 83px;
+  row-gap: 13px;
+  color: #444;
+}
+.footer4 h1{
+  font-size: 23px;
+  margin-top: 7px;
+}
+.footer4 p{
+  font-size: 10px;
+}
+.footer5{
+  display: flex;
+  margin-top: 50px;
+}
+.facebook{
+  display: flex;
+}
+.facebook a , .SUBS a{
+  font-size: 38px;
+}
+.facebook h4,.SUBS h4{
+  margin-left: 8px;
+}
+.SUBS{
+  margin-left: 42px;
+  display: flex;
+}
+.books{
+  display: flex;
+}
+.name,.phone_number{
+  margin-top: 50px;
+}
+.name input{
+  margin-top: 10px;
+  width: 404px;
+  border-radius: 4px;
+}
+.name label{
+  margin-inline: 10px;
+  font-size: 19px;
+}
+.phone_number label{
+  margin-left: 72px;
+  font-size: 19px;
+}
+.phone_number input{
+  margin-left: 72px;
+  margin-top: 11px;
+  width: 166px;
+  border-radius: 6px;
+  line-height: 29px;
+}
+.name2{
+  display: flex;
+  margin-top: -21px;
+}
+.name3{
+  display: flex;
+  margin-top: 24px;
+}
+.Date input{
+  width: 229px;
+  border-radius: 6px;
+  margin-top: 10px;
+  line-height: 32px;
+  margin-left: 11px;
+}
+.Date label{
+  font-size: 19px;
+  margin-left: 11px;
+}
+.Message label{
+  margin-left: 118px;
+  font-size: 21px;
+}
+.Message input{
+  margin-left: 118px;
+  height: 96px;
+  margin-top: 10px;
+}
+.name4{
+  margin-left: 19px;
+}
+.yes-no input{
+  margin-left: 6px;
+  margin-top: 6px;
+}
+.button4 {
+  background-color: white; 
+  color: black; 
+  margin-left: 462px;
+  width: 200px;
+  border-radius: 7px;
+  margin-top: -5px;
+}
+.button4:hover {
+  background-color: black;
+  color: white;
+}
+
+
